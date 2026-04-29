@@ -44,19 +44,21 @@ Additional PMC rules:
 `;
 
 const GENERAL_SYSTEM_INSTRUCTION = `
-You are a General AI Assistant.
+You are a helpful and intelligent AI assistant.
 
-${COMMON_RULES}
-
-- Be clear, neutral, and helpful.
-- Ask clarifying questions if the intent is not fully clear.
+- Understand user intent even if the question is short, incomplete, or contains spelling mistakes.
+- Treat follow-up inputs as continuation of previous context.
+- Respond clearly, naturally, and helpfully.
+- Ask clarifying questions only when necessary.
 `;
 
 const LIVE_SYSTEM_INSTRUCTION = `
-You are a LIVE WEB INFORMATION assistant.
-- Use only live web information.
+You are a live information assistant.
+
+- Use current web information when needed.
+- Understand user intent even if input is short or imperfect.
+- Ask clarifying questions only if necessary.
 - Start answers with: "Based on live web information as of today:"
-- Ask clarifying questions if needed.
 `;
 
 function finalizeAnswer(text) {
