@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 
 /* IMPORTANT: DO NOT use express.json() for multipart routes */
-/* Multer must handle the body first */
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
@@ -28,18 +27,20 @@ const FORMAT_RULES = `
 // SYSTEM INSTRUCTIONS
 // ===============================
 
-// ---------- PMC MODE (KEEP STRONG) ----------
+// ---------- PMC MODE ----------
 const PMC_SYSTEM_INSTRUCTION = `
 You are PMC CENTRE AI, a senior technical consultant for paper machine clothing professionals.
 
 ${FORMAT_RULES}
 
 - Provide expert-level, practical technical answers.
-- If machine type, grade, or section is missing, ask targeted clarification.
+- Understand imperfect or incomplete questions and infer intent.
+- If machine type, grade, or section is missing, ask targeted clarification at the end.
 - Be concise, structured, and experience-based.
+- Do not refuse unless absolutely impossible.
 `;
 
-// ---------- GENERAL MODE (SIMPLIFIED) ----------
+// ---------- GENERAL MODE ----------
 const GENERAL_SYSTEM_INSTRUCTION = `
 You are a helpful and intelligent AI assistant.
 
@@ -48,10 +49,12 @@ ${FORMAT_RULES}
 - Understand user intent even if the input is short, incomplete, or has spelling mistakes.
 - Treat follow-up inputs as continuation of previous conversation.
 - Respond clearly and naturally.
-- Ask clarification only when truly necessary.
+- Make reasonable assumptions if needed.
+- Ask clarification only when truly necessary, at the end.
+- Do not refuse unless absolutely impossible.
 `;
 
-// ---------- LIVE MODE (SIMPLIFIED) ----------
+// ---------- LIVE MODE ----------
 const LIVE_SYSTEM_INSTRUCTION = `
 You are a live information assistant.
 
@@ -59,18 +62,18 @@ ${FORMAT_RULES}
 
 - Use current web information when needed.
 - Understand user intent even if input is short or imperfect.
+- Make reasonable assumptions if needed.
 - Ask clarification only if necessary.
 - Start answers with: "Based on live web information as of today:"
 `;
 
-function finalizeAnswer(text) {
-  if (!text) return "";
-  const t = text.trim();
-  const last = t.slice(-1);
-  if (t.length > 500 && ![".", "!", "?", ":"].includes(last)) {
-    return t + "\n\nreturn t;";
-  }
-  return t;
+// ===============================
+// HELPER
+// ===============================
+
+function normalizeQuery(input) {
+  if (!input) return "";
+  return input.trim().replace(/\s+/g, " ").slice(0, 2000);
 }
 
 /* ===============================
@@ -79,24 +82,30 @@ function finalizeAnswer(text) {
 
 app.post("/ask", upload.single("file"), async (req, res) => {
   try {
-    const { question, mode } = req.body;
+    let { question, mode } = req.body;
 
-    if (!question || !question.trim()) {
+    question = normalizeQuery(question);
+
+    // ---------- EMPTY INPUT (SOFT UX, NOT FALLBACK) ----------
+    if (!question) {
       return res.json({
-        answer:
-          ""Could you tell me what you'd like help with?""
+        answer: "Could you tell me what you'd like help with?"
       });
     }
 
     let uploadedText = "";
+    let fileNote = "";
+
+    // ---------- FILE HANDLING (NO HARD STOP) ----------
     if (req.file) {
       uploadedText = await extractUploadedText(req.file);
+
       if (!uploadedText || uploadedText.trim().length < 30) {
-        return res.json({
-          answer:
-            "Your file was received, but I couldn’t extract enough usable text. I’ll answer based on your question instead."
-        });
+        fileNote =
+          "Note: File received but readable content was limited. Answering based on your question.\n\n";
+        uploadedText = "";
       }
+
       if (uploadedText.length > 6000) {
         uploadedText = uploadedText.slice(0, 6000);
       }
@@ -120,7 +129,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
           { role: "system", content: LIVE_SYSTEM_INSTRUCTION },
           { role: "user", content: question }
         ],
-        max_output_tokens: 450
+        max_output_tokens: 600
       });
 
       answer = r.output_text || "";
@@ -138,10 +147,10 @@ app.post("/ask", upload.single("file"), async (req, res) => {
           { role: "system", content: PMC_SYSTEM_INSTRUCTION },
           { role: "user", content: userContent }
         ],
-        max_output_tokens: 800
+        max_output_tokens: 900
       });
 
-      answer = finalizeAnswer(r.output_text);
+      answer = r.output_text || "";
     }
 
     /* ---------- GENERAL MODE ---------- */
@@ -158,15 +167,18 @@ app.post("/ask", upload.single("file"), async (req, res) => {
                 : question
           }
         ],
-        max_output_tokens: 600
+        max_output_tokens: 700
       });
 
-      answer = finalizeAnswer(r.output_text);
+      answer = r.output_text || "";
     }
 
-    if (!answer || answer.length < 15) {
-      answer =
-        "I need a bit more information to give you a precise answer. Could you please clarify your requirement?";
+    // ---------- FINAL CLEAN ----------
+    answer = (fileNote + answer).trim();
+
+    // LAST SAFETY (VERY LIGHT, NON-INTRUSIVE)
+    if (!answer) {
+      answer = "I couldn’t generate a proper response this time. Please try rephrasing slightly.";
     }
 
     res.json({ answer });
@@ -174,10 +186,9 @@ app.post("/ask", upload.single("file"), async (req, res) => {
   } catch (err) {
     console.error("ASK ERROR:", err);
 
-    // IMPORTANT: no vague errors for users
+    // TRUE SYSTEM ERROR ONLY
     res.json({
-      answer:
-        "I’m unable to confidently interpret the request with the information available. Could you please clarify what you want me to focus on?"
+      answer: "Something went wrong on my side. Please try again."
     });
   }
 });
