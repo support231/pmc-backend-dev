@@ -68,7 +68,7 @@ function finalizeAnswer(text) {
   const t = text.trim();
   const last = t.slice(-1);
   if (t.length > 500 && ![".", "!", "?", ":"].includes(last)) {
-    return t + "\n\nIf you want, I can continue with more detail.";
+    return t + "\n\nreturn t;";
   }
   return t;
 }
@@ -84,7 +84,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
     if (!question || !question.trim()) {
       return res.json({
         answer:
-          "I need a bit more detail to proceed. Could you please clarify your question?"
+          ""Could you tell me what you'd like help with?""
       });
     }
 
@@ -94,7 +94,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
       if (!uploadedText || uploadedText.trim().length < 30) {
         return res.json({
           answer:
-            "I received the uploaded file, but I could not extract enough readable information from it. Could you please clarify what you want me to analyze from this file?"
+            "Your file was received, but I couldn’t extract enough usable text. I’ll answer based on your question instead."
         });
       }
       if (uploadedText.length > 6000) {
