@@ -6,29 +6,27 @@ import { upload, extractUploadedText } from "./upload.js";
 const app = express();
 app.use(cors());
 
-/* IMPORTANT: DO NOT use express.json() for multipart routes */
-
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
 // ===============================
-// COMMON CORE RULES (OPTIMIZED)
+// CORE RULES (MINIMAL + STRONG)
 // ===============================
 
 const CORE_RULES = `
 You are a practical and intelligent assistant.
 
-RESPONSE STYLE:
 - Give a direct and concise answer
-- Use only details when asked
+- Use only as much detail as needed
 - Prefer clarity over completeness
-- Understand imperfect or short input naturally
+- Answer exactly what is asked
 
 FOLLOW-UP:
 - Treat follow-ups as continuation
 - If user refers to a point, answer only that part
 - Do not repeat previous content
+- Stay strictly within the scope of the question
 
 OUTPUT:
 - Plain text only
@@ -42,14 +40,19 @@ OUTPUT:
 
 // ---------- PMC MODE ----------
 const PMC_SYSTEM_INSTRUCTION = `
-You are PMC CENTRE AI, a helpful, intelligent, and natural AI technical assistant for paper machine clothing.
+You are PMC CENTRE AI, a technical expert in paper machine clothing.
+
+Provide direct, practical, experience-based answers.
+
+- Do not explain beyond the question scope
+- Do not introduce new sections unless asked
 
 ${CORE_RULES}
 `;
 
 // ---------- GENERAL MODE ----------
 const GENERAL_SYSTEM_INSTRUCTION = `
-You are a helpful, intelligent, and natural AI assistant.
+You are a helpful and intelligent AI assistant.
 
 ${CORE_RULES}
 `;
@@ -58,7 +61,7 @@ ${CORE_RULES}
 const LIVE_SYSTEM_INSTRUCTION = `
 You are a live information assistant.
 
-Use current web information when relevant.
+Use current web information when needed.
 Start answers with: "Based on live web information as of today:"
 
 ${CORE_RULES}
@@ -73,17 +76,17 @@ function normalizeQuery(input) {
   return input.trim().replace(/\s+/g, " ").slice(0, 2000);
 }
 
-/* ===============================
-   ASK ENDPOINT
-   =============================== */
+// ===============================
+// ASK ENDPOINT
+// ===============================
 
 app.post("/ask", upload.single("file"), async (req, res) => {
   try {
-    let { question, mode } = req.body;
+    let { question, mode, lastAnswer } = req.body;
 
     question = normalizeQuery(question);
+    lastAnswer = (lastAnswer || "").toString();
 
-    // ---------- EMPTY INPUT (SOFT UX, NOT FALLBACK) ----------
     if (!question) {
       return res.json({
         answer: "Could you tell me what you'd like help with?"
@@ -93,7 +96,6 @@ app.post("/ask", upload.single("file"), async (req, res) => {
     let uploadedText = "";
     let fileNote = "";
 
-    // ---------- FILE HANDLING (NO HARD STOP) ----------
     if (req.file) {
       uploadedText = await extractUploadedText(req.file);
 
@@ -110,72 +112,86 @@ app.post("/ask", upload.single("file"), async (req, res) => {
 
     let answer = "";
 
-    /* ---------- LIVE MODE ---------- */
+    // ===============================
+    // CONTEXT (MICRO - LAST ANSWER ONLY)
+    // ===============================
+
+    function buildInput(systemInstruction, userContent) {
+      return [
+        { role: "system", content: systemInstruction },
+        ...(lastAnswer
+          ? [{ role: "assistant", content: lastAnswer.slice(0, 800) }]
+          : []),
+        { role: "user", content: userContent }
+      ];
+    }
+
+    // ===============================
+    // LIVE MODE
+    // ===============================
+
     if (mode === "LIVE") {
       if (req.file) {
         return res.json({
           answer:
-            "Current Updates mode does not support document or image analysis. Please switch to PMC Expert Mode or General AI Assistant."
+            "Current Updates mode does not support document or image analysis. Please switch mode."
         });
       }
 
       const r = await openai.responses.create({
         model: "gpt-5.2",
         tools: [{ type: "web_search" }],
-        input: [
-          { role: "system", content: LIVE_SYSTEM_INSTRUCTION },
-          { role: "user", content: question }
-        ],
+        input: buildInput(LIVE_SYSTEM_INSTRUCTION, question),
+        max_output_tokens: 400
+      });
+
+      answer = r.output_text || "";
+    }
+
+    // ===============================
+    // PMC MODE
+    // ===============================
+
+    else if (mode === "PMC") {
+      const userContent = uploadedText
+        ? `MATERIAL:\n${uploadedText}\n\nQUESTION:\n${question}`
+        : question;
+
+      const r = await openai.responses.create({
+        model: "gpt-5.2",
+        input: buildInput(PMC_SYSTEM_INSTRUCTION, userContent),
         max_output_tokens: 600
       });
 
       answer = r.output_text || "";
     }
 
-    /* ---------- PMC MODE ---------- */
-    else if (mode === "PMC") {
+    // ===============================
+    // GENERAL MODE
+    // ===============================
+
+    else {
       const userContent = uploadedText
-        ? `UPLOADED MATERIAL:\n${uploadedText}\n\nTECHNICAL QUESTION:\n${question}`
+        ? `DOCUMENT:\n${uploadedText}\n\nQUESTION:\n${question}`
         : question;
 
       const r = await openai.responses.create({
         model: "gpt-5.2",
-        input: [
-          { role: "system", content: PMC_SYSTEM_INSTRUCTION },
-          { role: "user", content: userContent }
-        ],
-        max_output_tokens: 900
+        input: buildInput(GENERAL_SYSTEM_INSTRUCTION, userContent),
+        max_output_tokens: 400
       });
 
       answer = r.output_text || "";
     }
 
-    /* ---------- GENERAL MODE ---------- */
-    else {
-      const r = await openai.responses.create({
-        model: "gpt-5.2",
-        input: [
-          { role: "system", content: GENERAL_SYSTEM_INSTRUCTION },
-          {
-            role: "user",
-            content:
-              uploadedText
-                ? `DOCUMENT CONTENT:\n${uploadedText}\n\nQUESTION:\n${question}`
-                : question
-          }
-        ],
-        max_output_tokens: 700
-      });
+    // ===============================
+    // FINAL CLEAN
+    // ===============================
 
-      answer = r.output_text || "";
-    }
-
-    // ---------- FINAL CLEAN ----------
     answer = (fileNote + answer).trim();
 
-    // LAST SAFETY (VERY LIGHT, NON-INTRUSIVE)
     if (!answer) {
-      answer = "I couldn’t generate a proper response this time. Please try rephrasing slightly.";
+      answer = "Please try rephrasing your question.";
     }
 
     res.json({ answer });
@@ -183,16 +199,15 @@ app.post("/ask", upload.single("file"), async (req, res) => {
   } catch (err) {
     console.error("ASK ERROR:", err);
 
-    // TRUE SYSTEM ERROR ONLY
     res.json({
-      answer: "Something went wrong on my side. Please try again."
+      answer: "Something went wrong. Please try again."
     });
   }
 });
 
-/* ===============================
-   START SERVER
-   =============================== */
+// ===============================
+// START SERVER
+// ===============================
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
