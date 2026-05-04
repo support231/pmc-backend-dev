@@ -145,7 +145,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
       const r = await openai.responses.create({
         model: "gpt-5.2",
         input: buildInput(PMC_SYSTEM_INSTRUCTION, userContent),
-        max_output_tokens: 600
+        max_output_tokens: 800
       });
 
       answer = r.output_text || "";
@@ -163,7 +163,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
       const r = await openai.responses.create({
         model: "gpt-5.2",
         input: buildInput(GENERAL_SYSTEM_INSTRUCTION, userContent),
-        max_output_tokens: 400
+        max_output_tokens: 600
       });
 
       answer = r.output_text || "";
