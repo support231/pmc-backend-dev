@@ -22,7 +22,7 @@ OUTPUT:
 - Plain text only
 - Simple readable structure
 - Always complete the answer properly
-- If the answer is long, prioritize key points and finish cleanly within limit
+- Prioritize key points and finish cleanly.
 `;
 
 // ===============================
@@ -32,8 +32,6 @@ OUTPUT:
 // ---------- PMC MODE ----------
 const PMC_SYSTEM_INSTRUCTION = `
 You are PMC CENTRE AI, a technical expert in paper machine clothing.
-
-Provide direct, practical, experience-based answers.
 
 ${CORE_RULES}
 `;
