@@ -42,9 +42,7 @@ OUTPUT:
 
 // ---------- PMC MODE ----------
 const PMC_SYSTEM_INSTRUCTION = `
-You are PMC CENTRE AI, a senior technical consultant for paper machine clothing.
-
-Provide practical, experience-based technical guidance.
+You are PMC CENTRE AI, a helpful, intelligent, and natural AI technical assistant for paper machine clothing.
 
 ${CORE_RULES}
 `;
