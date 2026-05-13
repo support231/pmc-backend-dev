@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ff_001",
+    "topic": "forming_fabric_functions",
+    "keywords": [
+      "forming fabric",
+      "functions",
+      "drainage",
+      "sheet support",
+      "retention",
+      "conveyor"
+    ],
+    "content": "The forming fabric performs three main functions in the forming section of a paper machine: allowing water drainage through the structure, supporting and forming the fiber sheet, and transporting the sheet to the press section. Fabric surface geometry influences wire mark, linting, sheet smoothness, retention, and two-sidedness."
+  },
+  {
+    "id": "ff_002",
+    "topic": "forming_fabric_mechanical_requirements",
+    "keywords": [
+      "wear resistance",
+      "stretching",
+      "guideability",
+      "driveability",
+      "cleanability",
+      "forming fabric properties"
+    ],
+    "content": "A forming fabric must provide good wear resistance, resistance to stretching, narrowing, skew, ridging and wrinkling, along with good guideability and driveability. It should withstand high pressure showers and allow efficient cleaning and sheet release."
+  },
+  {
+    "id": "ff_003",
+    "topic": "forming_fabric_papermaking_requirements",
+    "keywords": [
+      "formation",
+      "retention",
+      "two sidedness",
+      "linting",
+      "paper properties"
+    ],
+    "content": "A forming fabric should provide good first pass retention, improved sheet formation, reduced linting, low two-sidedness, reduced power consumption and proper surface topography to achieve desired paper properties."
+  },
+  {
+    "id": "ff_004",
+    "topic": "forming_fabric_design_types",
+    "keywords": [
+      "single layer",
+      "double layer",
+      "triple layer",
+      "forming fabric design"
+    ],
+    "content": "The three main categories of forming fabric designs used in papermaking are single layer, two layer and three layer fabrics. Each design provides different levels of drainage, stability, fiber support, retention and wear resistance."
+  },
+  {
+    "id": "ff_005",
+    "topic": "flat_vs_endless_weaving",
+    "keywords": [
+      "flat woven",
+      "endless woven",
+      "seaming",
+      "warp",
+      "weft",
+      "machine direction",
+      "cross machine direction"
+    ],
+    "content": "Forming fabrics can be woven flat or endless. Flat woven fabrics require seaming before installation on the paper machine. In flat weaving, warp yarns become machine direction yarns and filling yarns become cross machine direction yarns on the paper machine."
+  },
+  {
+    "id": "ff_006",
+    "topic": "single_layer_forming_fabrics",
+    "keywords": [
+      "single layer fabric",
+      "harness",
+      "wire mark",
+      "drainage"
+    ],
+    "content": "Single layer forming fabrics consist of one layer of warp yarns and one layer of weft yarns. They are commonly woven with two to eight harness designs and generally provide high drainage but lower fiber support compared to multilayer fabrics."
+  },
+  {
+    "id": "ff_007",
+    "topic": "double_layer_fabric_advantages",
+    "keywords": [
+      "double layer",
+      "formation",
+      "retention",
+      "stability",
+      "wear resistance"
+    ],
+    "content": "Double layer forming fabrics provide greater dimensional stability, improved wear resistance, higher fiber support, improved formation, better retention and lower two-sidedness compared to single layer fabrics."
+  },
+  {
+    "id": "ff_008",
+    "topic": "double_layer_drainage_behavior",
+    "keywords": [
+      "drainage",
+      "double layer",
+      "fiber support",
+      "water removal"
+    ],
+    "content": "Double layer fabrics increase overall drainage capacity while reducing the initial drainage rate. Water and solids change direction multiple times within the structure, reducing fiber loss and improving retention and formation."
+  },
+  {
+    "id": "ff_009",
+    "topic": "three_layer_fabric_advantages",
+    "keywords": [
+      "triple layer",
+      "three layer",
+      "fiber support",
+      "retention",
+      "formation",
+      "fabric life"
+    ],
+    "content": "Three layer forming fabrics provide improved fiber support, improved formation, reduced two-sidedness, increased design flexibility and longer fabric life. The top layer can be optimized for sheet support while the bottom layer provides wear resistance and stability."
+  },
+  {
+    "id": "ff_010",
+    "topic": "three_layer_design_characteristics",
+    "keywords": [
+      "three layer design",
+      "machine side",
+      "paper side",
+      "wear resistance"
+    ],
+    "content": "Three layer forming fabrics typically use finer yarns on the paper side for sheet quality and larger yarns on the machine side for wear resistance and dimensional stability."
+  },
+  {
+    "id": "ff_011",
+    "topic": "forming_fabric_design_variables",
+    "keywords": [
+      "yarn diameter",
+      "mesh",
+      "open area",
+      "hole size",
+      "drainage"
+    ],
+    "content": "The drainage and support characteristics of forming fabrics are controlled through yarn diameter, mesh count, weave pattern and yarn predominance. Adjusting mesh and yarn size changes hole size and percent open area."
+  },
+  {
+    "id": "ff_012",
+    "topic": "forming_fabric_materials",
+    "keywords": [
+      "polyester",
+      "nylon",
+      "monofilament",
+      "wear resistance"
+    ],
+    "content": "Modern forming fabrics are mainly manufactured from high molecular weight polyester monofilaments. Nylon yarns may be used in the machine side for improved wear resistance, especially in alkaline papermaking conditions."
+  },
+  {
+    "id": "ff_013",
+    "topic": "forming_fabric_manufacturing",
+    "keywords": [
+      "heatsetting",
+      "seaming",
+      "fringing",
+      "fabric manufacturing"
+    ],
+    "content": "The manufacture of forming fabrics includes weaving, heatsetting, seaming, finishing and surface treatment. Heatsetting stabilizes the fabric dimensions and establishes yarn crimp."
+  },
+  {
+    "id": "ff_014",
+    "topic": "forming_fabric_seaming",
+    "keywords": [
+      "pin seam",
+      "seaming",
+      "fabric installation"
+    ],
+    "content": "Flat woven forming fabrics are joined by seaming. In pin seam construction, loops are formed at fabric ends and connected using a pin. Pin seams simplify installation but may create drainage differences in the seam area."
+  },
+  {
+    "id": "ff_015",
+    "topic": "forming_fabric_surface_treatments",
+    "keywords": [
+      "fabric contamination",
+      "surface treatment",
+      "wettability",
+      "zeta potential"
+    ],
+    "content": "Surface treatments are applied to forming fabrics to reduce contamination and improve cleanability. Surface wettability and electrochemical interactions influence contaminant buildup and drainage performance."
+  }
+]
