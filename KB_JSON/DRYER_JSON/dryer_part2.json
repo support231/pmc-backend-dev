@@ -1,0 +1,289 @@
+[
+  {
+    "id": "df2_001",
+    "topic": "dryer_fabric_testing",
+    "keywords": [
+      "dryer fabric testing",
+      "quality testing",
+      "fabric properties"
+    ],
+    "content": "Dryer fabrics are tested for elongation, modulus, seam tensile strength, air permeability, air carrying capacity, heat transfer, caliper, friction coefficient, thermal stability and contamination tendency."
+  },
+  {
+    "id": "df2_002",
+    "topic": "hydrolysis_testing",
+    "keywords": [
+      "hydrolysis test",
+      "autoclave",
+      "Parr bomb",
+      "residual strength"
+    ],
+    "content": "Hydrolysis resistance testing is performed in autoclaves or Parr Bomb tests under high temperature and pressure conditions to evaluate residual tensile strength after aging."
+  },
+  {
+    "id": "df2_003",
+    "topic": "dryer_fabric_contamination",
+    "keywords": [
+      "contamination",
+      "dryer deposits",
+      "pitch",
+      "latex",
+      "wax"
+    ],
+    "content": "Dryer fabric contamination mainly consists of adhesives, wax, latex, resin and pitch deposits which reduce permeability and negatively affect sheet runnability."
+  },
+  {
+    "id": "df2_004",
+    "topic": "contamination_effects",
+    "keywords": [
+      "low permeability",
+      "sheet flutter",
+      "reduced drying",
+      "breaks"
+    ],
+    "content": "Contamination decreases fabric permeability, reduces drying efficiency and may lead to sheet flutter, wrinkles, web breaks and productivity loss."
+  },
+  {
+    "id": "df2_005",
+    "topic": "anticontamination_materials",
+    "keywords": [
+      "anticontamination",
+      "Teflon",
+      "dirt repellent"
+    ],
+    "content": "Anticontamination materials and dirt repellent coatings are used to reduce deposit build-up and improve dryer fabric cleanliness."
+  },
+  {
+    "id": "df2_006",
+    "topic": "dryer_fabric_cleaning",
+    "keywords": [
+      "dryer cleaning",
+      "fabric cleaning",
+      "cleanability"
+    ],
+    "content": "Dryer fabric cleaning systems include brushes, doctor blades, chemical cleaning and high pressure cleaning methods to maintain permeability and machine efficiency."
+  },
+  {
+    "id": "df2_007",
+    "topic": "brush_cleaning",
+    "keywords": [
+      "brush cleaning",
+      "rotary brush",
+      "dryer fabric maintenance"
+    ],
+    "content": "Fixed or rotary brushes are commonly used for cleaning monofilament dryer fabrics and removing contamination deposits from the paper side."
+  },
+  {
+    "id": "df2_008",
+    "topic": "doctor_cleaning",
+    "keywords": [
+      "doctor blade",
+      "scraper",
+      "fabric cleaning"
+    ],
+    "content": "Doctor blades may be used continuously or intermittently to remove deposits from dryer fabrics, although high machine speeds can limit their application."
+  },
+  {
+    "id": "df2_009",
+    "topic": "chemical_cleaning",
+    "keywords": [
+      "chemical cleaning",
+      "alkali cleaning",
+      "polyester resistance"
+    ],
+    "content": "Chemical cleaning agents can effectively remove contamination, but polyester materials are sensitive to alkali and high temperatures, requiring careful rinsing and control."
+  },
+  {
+    "id": "df2_010",
+    "topic": "co2_cleaning",
+    "keywords": [
+      "CO2 cleaning",
+      "dry ice cleaning",
+      "deep frozen CO2"
+    ],
+    "content": "Deep frozen CO2 cleaning is an advanced dryer fabric cleaning method capable of restoring permeability with minimal mechanical wear."
+  },
+  {
+    "id": "df2_011",
+    "topic": "conventional_dryer_configuration",
+    "keywords": [
+      "conventional dryer",
+      "top bottom dryer",
+      "open draw"
+    ],
+    "content": "Conventional dryer sections use alternating top and bottom dryers with open draws that can create sheet flutter and sheet breaks at high machine speeds."
+  },
+  {
+    "id": "df2_012",
+    "topic": "unorun_configuration",
+    "keywords": [
+      "UnoRun",
+      "single tier dryer",
+      "serpentine configuration"
+    ],
+    "content": "UnoRun dryer configuration uses a single fabric to support the sheet continuously through the dryer section, significantly reducing flutter and breaks."
+  },
+  {
+    "id": "df2_013",
+    "topic": "unorun_benefits",
+    "keywords": [
+      "UnoRun advantages",
+      "sheet stability",
+      "higher speed"
+    ],
+    "content": "UnoRun improves sheet runnability, reduces sheet breaks, improves edge quality and allows higher operating speeds by maintaining continuous sheet support."
+  },
+  {
+    "id": "df2_014",
+    "topic": "unorun_limitations",
+    "keywords": [
+      "UnoRun limitations",
+      "drying capacity",
+      "heat transfer"
+    ],
+    "content": "UnoRun configurations may reduce drying capacity because the fabric separates the sheet from some dryer cylinders, reducing direct heat transfer."
+  },
+  {
+    "id": "df2_015",
+    "topic": "unorun_fabric_requirements",
+    "keywords": [
+      "UnoRun fabric",
+      "low permeability",
+      "smooth surface"
+    ],
+    "content": "UnoRun positions typically require smooth monofilament fabrics with uniform low permeability in the range of approximately 50 to 80 cfm for stable sheet adherence."
+  },
+  {
+    "id": "df2_016",
+    "topic": "single_tier_requirements",
+    "keywords": [
+      "single tier",
+      "fabric drive",
+      "nonmarking seam"
+    ],
+    "content": "Single tier dryer sections require stable dryer fabrics capable of driving undriven cylinders while maintaining smooth nonmarking seam properties."
+  },
+  {
+    "id": "df2_017",
+    "topic": "seam_permeability",
+    "keywords": [
+      "seam permeability",
+      "sheet marking",
+      "welting"
+    ],
+    "content": "High permeability differences between seam area and fabric body can create sheet drying variations or welting marks on sensitive paper grades."
+  },
+  {
+    "id": "df2_018",
+    "topic": "neutral_line",
+    "keywords": [
+      "neutral line",
+      "fabric thickness",
+      "sheet stretch"
+    ],
+    "content": "Neutral line represents the point within the dryer fabric thickness where speed difference is zero. Fabric construction influences paper stretching and shrinkage behavior."
+  },
+  {
+    "id": "df2_019",
+    "topic": "sheet_flutter",
+    "keywords": [
+      "sheet flutter",
+      "open draw",
+      "web instability"
+    ],
+    "content": "Sheet flutter occurs mainly in unsupported open draws and can result in wrinkles, edge cracks and sheet breaks, especially at high machine speeds."
+  },
+  {
+    "id": "df2_020",
+    "topic": "short_draw_transfer",
+    "keywords": [
+      "short draw",
+      "sheet transfer",
+      "reduced open draw"
+    ],
+    "content": "Short draw transfer systems reduce unsupported sheet length between dryer sections and significantly improve runnability and flutter control."
+  },
+  {
+    "id": "df2_021",
+    "topic": "pistol_grip_transfer",
+    "keywords": [
+      "pistol grip",
+      "lick transfer",
+      "UnoRun transfer"
+    ],
+    "content": "Pistol grip UnoRun transfer uses partial single-tier arrangement to improve sheet transfer stability while minimizing sheet flutter."
+  },
+  {
+    "id": "df2_022",
+    "topic": "dryer_fabric_air_carrying",
+    "keywords": [
+      "air carrying capacity",
+      "air flow",
+      "ventilation"
+    ],
+    "content": "Dryer fabrics transport air within the dryer section. Excessive air carrying capacity may contribute to sheet instability and reduced drying efficiency."
+  },
+  {
+    "id": "df2_023",
+    "topic": "dryer_fabric_contact_area",
+    "keywords": [
+      "contact area",
+      "sheet support",
+      "surface design"
+    ],
+    "content": "Fabric contact area affects sheet support, marking tendency, heat transfer and drying efficiency. Surface weave design controls effective contact area."
+  },
+  {
+    "id": "df2_024",
+    "topic": "dryer_fabric_permeability_selection",
+    "keywords": [
+      "permeability selection",
+      "dryer permeability",
+      "fabric ventilation"
+    ],
+    "content": "Dryer fabric permeability must be selected according to machine design, paper grade, runnability requirements and drying conditions."
+  },
+  {
+    "id": "df2_025",
+    "topic": "spiral_fabric_application",
+    "keywords": [
+      "spiral application",
+      "spiral dryer",
+      "high ventilation"
+    ],
+    "content": "Spiral dryer fabrics are preferred in applications requiring excellent ventilation and dimensional stability but are less suitable for highly marking sensitive grades."
+  },
+  {
+    "id": "df2_026",
+    "topic": "raw_material_properties",
+    "keywords": [
+      "PET monofilament",
+      "shrinkage",
+      "tenacity",
+      "dryer yarn properties"
+    ],
+    "content": "Hydrolysis resistant polyester monofilaments used in dryer fabrics are selected based on tenacity, elongation and thermal shrinkage properties for stable high temperature operation."
+  },
+  {
+    "id": "df2_027",
+    "topic": "spiral_and_pintle_materials",
+    "keywords": [
+      "spiral yarn",
+      "pintle yarn",
+      "high shrinkage PET",
+      "low shrinkage PET"
+    ],
+    "content": "Spiral dryer fabrics use high shrinkage PET for spiral formation and low shrinkage PET for pintles to maintain dimensional stability during machine operation."
+  },
+  {
+    "id": "df2_028",
+    "topic": "dryer_fabric_finishing",
+    "keywords": [
+      "finishing",
+      "zip seam",
+      "Velcro assist",
+      "leader skirt"
+    ],
+    "content": "Dryer fabric finishing includes seam assist systems such as zip tape or Velcro, along with leader skirts and hook protectors to simplify installation and handling."
+  }
+]
