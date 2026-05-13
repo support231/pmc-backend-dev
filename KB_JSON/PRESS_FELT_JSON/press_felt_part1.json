@@ -1,0 +1,295 @@
+[
+  {
+    "id": "pf_001",
+    "topic": "press_felt_function",
+    "keywords": [
+      "press felt",
+      "press fabric",
+      "water removal",
+      "sheet consolidation",
+      "sheet support"
+    ],
+    "content": "The primary functions of a press felt are water removal, sheet consolidation, sheet support and sheet transport through the press section. The felt absorbs and carries water away from the nip while supporting the sheet structure under compression."
+  },
+  {
+    "id": "pf_002",
+    "topic": "press_section_water_removal",
+    "keywords": [
+      "press section",
+      "water removal",
+      "nip pressure",
+      "dewatering"
+    ],
+    "content": "Water removal in the press section occurs through compression of the paper web in the nip between press rolls. Increased nip pressure generally improves dewatering efficiency and increases sheet dryness entering the dryer section."
+  },
+  {
+    "id": "pf_003",
+    "topic": "sheet_consistency_after_press",
+    "keywords": [
+      "sheet consistency",
+      "press dryness",
+      "press section"
+    ],
+    "content": "Typical sheet consistency after the press section is approximately 40% fiber and 60% water, although shoe presses may achieve higher dryness levels around 50% solids."
+  },
+  {
+    "id": "pf_004",
+    "topic": "press_felt_surface_effect",
+    "keywords": [
+      "surface finish",
+      "felt design",
+      "sheet smoothness",
+      "marking"
+    ],
+    "content": "Press felt design influences sheet surface finish, smoothness, bulk and marking tendency because the wet sheet conforms to the felt structure during pressing."
+  },
+  {
+    "id": "pf_005",
+    "topic": "press_felt_running_life",
+    "keywords": [
+      "felt life",
+      "press felt life",
+      "running days"
+    ],
+    "content": "Typical running life of press felts ranges from approximately 30 to 90 days depending on paper grade, machine conditions, contamination and felt design."
+  },
+  {
+    "id": "pf_006",
+    "topic": "press_felt_structure",
+    "keywords": [
+      "base fabric",
+      "batt fiber",
+      "needled felt",
+      "felt structure"
+    ],
+    "content": "Modern press felts generally consist of woven base fabrics combined with nonwoven batt fibers attached through needling processes to provide water handling capacity and sheet support."
+  },
+  {
+    "id": "pf_007",
+    "topic": "batt_fiber_function",
+    "keywords": [
+      "batt fiber",
+      "surface properties",
+      "water absorption",
+      "sheet support"
+    ],
+    "content": "Batt fibers provide surface cushioning, water absorption and sheet support characteristics. Batt structure strongly influences marking tendency, dewatering and smoothness."
+  },
+  {
+    "id": "pf_008",
+    "topic": "base_fabric_function",
+    "keywords": [
+      "base fabric",
+      "dimensional stability",
+      "felt strength",
+      "support structure"
+    ],
+    "content": "The woven base fabric provides dimensional stability, tensile strength and structural support to the press felt during machine operation."
+  },
+  {
+    "id": "pf_009",
+    "topic": "water_flow_in_press_nip",
+    "keywords": [
+      "water flow",
+      "nip",
+      "felt void volume",
+      "dewatering"
+    ],
+    "content": "During nip compression, water moves from the sheet into the felt void volume and may also be removed through suction systems after the nip."
+  },
+  {
+    "id": "pf_010",
+    "topic": "felt_void_volume",
+    "keywords": [
+      "void volume",
+      "water capacity",
+      "felt saturation"
+    ],
+    "content": "Press felt void volume determines the amount of water that can be temporarily stored and transported away from the press nip during dewatering."
+  },
+  {
+    "id": "pf_011",
+    "topic": "felt_compaction",
+    "keywords": [
+      "felt compaction",
+      "density increase",
+      "reduced permeability"
+    ],
+    "content": "Over time, press felts compact under repeated nip loading which reduces permeability, lowers void volume and decreases dewatering efficiency."
+  },
+  {
+    "id": "pf_012",
+    "topic": "felt_permeability",
+    "keywords": [
+      "felt permeability",
+      "air permeability",
+      "water handling"
+    ],
+    "content": "Press felt permeability influences water handling and rewetting behavior. Reduced permeability may increase water carryback and lower press efficiency."
+  },
+  {
+    "id": "pf_013",
+    "topic": "rewetting",
+    "keywords": [
+      "rewetting",
+      "sheet moisture",
+      "nip exit",
+      "water return"
+    ],
+    "content": "Rewetting occurs when water returns from the felt back into the sheet after the nip due to pressure release and insufficient felt void capacity."
+  },
+  {
+    "id": "pf_014",
+    "topic": "felt_cleaning",
+    "keywords": [
+      "felt cleaning",
+      "showers",
+      "vacuum box",
+      "contamination"
+    ],
+    "content": "Press felt cleaning systems include showers, suction boxes and conditioning equipment to remove contaminants and maintain permeability and water handling performance."
+  },
+  {
+    "id": "pf_015",
+    "topic": "felt_contamination",
+    "keywords": [
+      "felt contamination",
+      "filling",
+      "plugging",
+      "deposits"
+    ],
+    "content": "Contamination from fillers, fibers, pitch, stickies and chemicals can plug felt voids and reduce permeability, resulting in poor dewatering and sheet defects."
+  },
+  {
+    "id": "pf_016",
+    "topic": "needle_punching",
+    "keywords": [
+      "needle punching",
+      "needling",
+      "batt anchoring"
+    ],
+    "content": "Needle punching mechanically entangles batt fibers into the base fabric structure and creates the desired felt density and surface properties."
+  },
+  {
+    "id": "pf_017",
+    "topic": "felt_marking",
+    "keywords": [
+      "felt marking",
+      "shadow marking",
+      "sheet defects"
+    ],
+    "content": "Improper felt design, seam differences or nonuniform compaction can produce shadow marking and sheet surface defects in sensitive grades."
+  },
+  {
+    "id": "pf_018",
+    "topic": "press_felt_design_balance",
+    "keywords": [
+      "felt design",
+      "void volume",
+      "support",
+      "permeability"
+    ],
+    "content": "Press felt design requires balancing permeability, void volume, compressibility, sheet support and wear resistance according to machine speed and paper grade."
+  },
+  {
+    "id": "pf_019",
+    "topic": "double_layer_base_fabric",
+    "keywords": [
+      "double layer",
+      "base fabric",
+      "stability",
+      "wear resistance"
+    ],
+    "content": "Double layer base fabrics improve dimensional stability, seam strength and wear resistance while maintaining adequate water handling capacity."
+  },
+  {
+    "id": "pf_020",
+    "topic": "laminated_felts",
+    "keywords": [
+      "laminated felt",
+      "multi layer felt",
+      "high speed machine"
+    ],
+    "content": "Laminated and multilayer press felts are commonly used on high speed paper machines where higher void volume and improved stability are required."
+  },
+  {
+    "id": "pf_021",
+    "topic": "shoe_press_requirements",
+    "keywords": [
+      "shoe press",
+      "high nip load",
+      "felt compressibility"
+    ],
+    "content": "Shoe press applications require press felts with high compressibility, good resiliency and stable void volume under extended nip loading conditions."
+  },
+  {
+    "id": "pf_022",
+    "topic": "felt_seam_design",
+    "keywords": [
+      "felt seam",
+      "pin seam",
+      "seam marking"
+    ],
+    "content": "Press felt seams must provide strength, flexibility and permeability similar to the felt body to minimize seam marking and sheet defects."
+  },
+  {
+    "id": "pf_023",
+    "topic": "vacuum_box_function",
+    "keywords": [
+      "vacuum box",
+      "uuhle box",
+      "felt conditioning"
+    ],
+    "content": "Vacuum boxes remove water from the felt after the nip and help restore felt void volume before the next press loading cycle."
+  },
+  {
+    "id": "pf_024",
+    "topic": "felt_density",
+    "keywords": [
+      "felt density",
+      "compressibility",
+      "water handling"
+    ],
+    "content": "Higher felt density may improve sheet smoothness and support but can reduce permeability and water handling capacity."
+  },
+  {
+    "id": "pf_025",
+    "topic": "felt_batt_materials",
+    "keywords": [
+      "nylon batt",
+      "polyester batt",
+      "batt fiber materials"
+    ],
+    "content": "Batt fibers are commonly manufactured from nylon or polyester depending on wear resistance, resiliency, hydrolysis resistance and application conditions."
+  },
+  {
+    "id": "pf_026",
+    "topic": "felt_hydrolysis",
+    "keywords": [
+      "hydrolysis",
+      "felt degradation",
+      "high temperature"
+    ],
+    "content": "Hydrolysis and chemical attack can reduce felt strength and stability, particularly under high temperature and acidic conditions."
+  },
+  {
+    "id": "pf_027",
+    "topic": "nip_residence_time",
+    "keywords": [
+      "nip residence time",
+      "dewatering time",
+      "shoe press"
+    ],
+    "content": "Longer nip residence time improves water removal efficiency because pressure acts on the sheet and felt structure for a longer duration."
+  },
+  {
+    "id": "pf_028",
+    "topic": "press_loading",
+    "keywords": [
+      "press loading",
+      "line pressure",
+      "water removal"
+    ],
+    "content": "Higher press loading generally improves sheet dryness but excessive loading may crush sheet bulk or damage felt structure."
+  }
+]
