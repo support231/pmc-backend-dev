@@ -1,0 +1,311 @@
+[
+  {
+    "id": "pmc_ref_001",
+    "topic": "press_section_function",
+    "keywords": [
+      "press section",
+      "water removal",
+      "sheet consolidation",
+      "sheet support",
+      "sheet transfer"
+    ],
+    "content": "The press section follows the forming section on a paper machine. Its functions include continued water removal, sheet consolidation, sheet support, sheet transfer and surface texture development."
+  },
+  {
+    "id": "pmc_ref_002",
+    "topic": "press_fabric_definition",
+    "keywords": [
+      "press fabric",
+      "press felt",
+      "felt definition"
+    ],
+    "content": "The terms press fabric and press felt are commonly used interchangeably in the paper industry although technically a felt refers to a fabric made only from fibers without woven yarns."
+  },
+  {
+    "id": "pmc_ref_003",
+    "topic": "sheet_consistency_press_section",
+    "keywords": [
+      "sheet consistency",
+      "press inlet",
+      "press outlet",
+      "water content"
+    ],
+    "content": "Typical sheet consistency entering the press section is about 20 percent fiber and 80 percent water, while exiting consistency is approximately 40 percent fiber and 60 percent water."
+  },
+  {
+    "id": "pmc_ref_004",
+    "topic": "press_nip_water_removal",
+    "keywords": [
+      "press nip",
+      "compression",
+      "dewatering",
+      "nip pressure"
+    ],
+    "content": "Water removal in the press section occurs when the sheet is compressed between rolls and press fabrics in the nip, forcing water out of the sheet structure."
+  },
+  {
+    "id": "pmc_ref_005",
+    "topic": "press_fabric_main_functions",
+    "keywords": [
+      "press fabric function",
+      "water removal",
+      "sheet support",
+      "surface finish"
+    ],
+    "content": "Main functions of a press fabric include water removal, sheet support, sheet transportation, pressure distribution and imparting proper surface finish to the paper."
+  },
+  {
+    "id": "pmc_ref_006",
+    "topic": "press_fabric_additional_functions",
+    "keywords": [
+      "closed draw",
+      "sheet transfer",
+      "felt drive"
+    ],
+    "content": "Additional functions of press fabrics include transferring the sheet in closed draws and driving undriven felt rolls and cylinder formers."
+  },
+  {
+    "id": "pmc_ref_007",
+    "topic": "void_volume_definition",
+    "keywords": [
+      "void volume",
+      "water capacity",
+      "fabric porosity"
+    ],
+    "content": "Void volume is the volume within the press fabric not occupied by fibers or yarns and determines the amount of water the fabric can absorb."
+  },
+  {
+    "id": "pmc_ref_008",
+    "topic": "press_fabric_important_properties",
+    "keywords": [
+      "fabric properties",
+      "strength",
+      "permeability",
+      "abrasion resistance"
+    ],
+    "content": "Important press fabric properties include strength, void volume, permeability, low compressibility, batt-to-base ratio, abrasion resistance, contaminant resistance and chemical resistance."
+  },
+  {
+    "id": "pmc_ref_009",
+    "topic": "flow_controlled_nips",
+    "keywords": [
+      "flow controlled nip",
+      "water flow resistance",
+      "heavyweight sheet"
+    ],
+    "content": "Flow-controlled nips are characterized by high water loads, heavyweight sheets, slow drainage and low freeness stock where water flow resistance in the sheet controls dewatering."
+  },
+  {
+    "id": "pmc_ref_010",
+    "topic": "flow_controlled_nip_problems",
+    "keywords": [
+      "crushing",
+      "hydraulic flow mark",
+      "flow controlled nip"
+    ],
+    "content": "Major problems in flow-controlled nips include sheet crushing and hydraulic flow marking."
+  },
+  {
+    "id": "pmc_ref_011",
+    "topic": "flow_controlled_nip_water_removal",
+    "keywords": [
+      "soft roll cover",
+      "large diameter roll",
+      "double felting"
+    ],
+    "content": "Water removal in flow-controlled nips is aided by soft roll covers, large diameter rolls, double felting and high sheet temperatures."
+  },
+  {
+    "id": "pmc_ref_012",
+    "topic": "flow_controlled_design_considerations",
+    "keywords": [
+      "low flow resistance",
+      "high permeability",
+      "high void volume"
+    ],
+    "content": "Flow-controlled nips require low flow resistance, high permeability and high void volume structures, often achieved with multilayer or laminated fabrics."
+  },
+  {
+    "id": "pmc_ref_013",
+    "topic": "pressure_controlled_nips",
+    "keywords": [
+      "pressure controlled nip",
+      "mechanical resistance",
+      "lightweight sheet"
+    ],
+    "content": "Pressure-controlled nips are characterized by low water loads, lightweight sheets, fast drainage and high freeness stock where mechanical compression resistance controls dewatering."
+  },
+  {
+    "id": "pmc_ref_014",
+    "topic": "pressure_controlled_nip_problems",
+    "keywords": [
+      "vibration",
+      "poor consistency",
+      "impression mark"
+    ],
+    "content": "Major symptoms of pressure-controlled nip problems include vibration, poor sheet consistency and impression marking."
+  },
+  {
+    "id": "pmc_ref_015",
+    "topic": "pressure_controlled_nip_water_removal",
+    "keywords": [
+      "hard roll cover",
+      "small diameter roll",
+      "pressing uniformity"
+    ],
+    "content": "Water removal in pressure-controlled nips is aided by hard roll covers, small diameter rolls, pressing uniformity and high sheet temperatures."
+  },
+  {
+    "id": "pmc_ref_016",
+    "topic": "pressure_controlled_design_considerations",
+    "keywords": [
+      "base pressure uniformity",
+      "mass uniformity",
+      "fine batt denier"
+    ],
+    "content": "Pressure-controlled nips require high pressure uniformity, good mass uniformity and finer batt deniers to improve pressure distribution."
+  },
+  {
+    "id": "pmc_ref_017",
+    "topic": "transversal_flow_pressing",
+    "keywords": [
+      "transversal flow pressing",
+      "press phases",
+      "water transfer"
+    ],
+    "content": "Transversal flow pressing consists of several phases involving sheet saturation, hydraulic pressure generation, maximum dryness and rewetting during expansion after the nip."
+  },
+  {
+    "id": "pmc_ref_018",
+    "topic": "rewetting_definition",
+    "keywords": [
+      "rewetting",
+      "negative hydraulic pressure",
+      "capillary force"
+    ],
+    "content": "Rewetting occurs in the outgoing nip when the sheet and press fabric expand and water returns from the fabric to the paper due to capillary forces and pressure differences."
+  },
+  {
+    "id": "pmc_ref_019",
+    "topic": "ideal_press_fabric",
+    "keywords": [
+      "uniform pressure",
+      "low flow resistance",
+      "minimum rewet"
+    ],
+    "content": "An ideal press fabric should provide uniform pressure distribution, low flow resistance and minimum rewetting."
+  },
+  {
+    "id": "pmc_ref_020",
+    "topic": "press_design_factors",
+    "keywords": [
+      "water load",
+      "nip width",
+      "sheet properties",
+      "temperature"
+    ],
+    "content": "Important variables influencing press fabric design include water load, nip pressure, nip width, speed, dwell time, sheet properties and temperature."
+  },
+  {
+    "id": "pmc_ref_021",
+    "topic": "first_press_vs_last_press",
+    "keywords": [
+      "first press",
+      "last press",
+      "flow controlled",
+      "pressure controlled"
+    ],
+    "content": "First presses with high water loads behave more like flow-controlled nips, while later presses with lower water loads behave more like pressure-controlled nips."
+  },
+  {
+    "id": "pmc_ref_022",
+    "topic": "press_fabric_history",
+    "keywords": [
+      "felt history",
+      "needled fabric",
+      "synthetic felt"
+    ],
+    "content": "Modern press fabrics evolved from woven wool felts to synthetic needled structures with improved strength, drainage and durability."
+  },
+  {
+    "id": "pmc_ref_023",
+    "topic": "needling_process",
+    "keywords": [
+      "needling",
+      "needle punching",
+      "batt anchoring"
+    ],
+    "content": "Needling is the process of mechanically locking batt fibers into the base fabric using barbed needles."
+  },
+  {
+    "id": "pmc_ref_024",
+    "topic": "press_fabric_structure",
+    "keywords": [
+      "base fabric",
+      "batt",
+      "felt structure"
+    ],
+    "content": "Press fabrics generally consist of two main components: a woven base fabric and batt fibers attached by needling."
+  },
+  {
+    "id": "pmc_ref_025",
+    "topic": "base_fabric_materials",
+    "keywords": [
+      "polyamide",
+      "nylon",
+      "synthetic yarn"
+    ],
+    "content": "Most modern press fabric base structures are manufactured from synthetic materials, primarily polyamide or nylon polymers."
+  },
+  {
+    "id": "pmc_ref_026",
+    "topic": "yarn_types_press_fabrics",
+    "keywords": [
+      "cabled mono",
+      "multifilament",
+      "spun yarn",
+      "monofilament"
+    ],
+    "content": "Common yarn types used in press fabric base structures include cabled monofilament, multifilament, spun yarn and single monofilament."
+  },
+  {
+    "id": "pmc_ref_027",
+    "topic": "monofilament_characteristics",
+    "keywords": [
+      "monofilament",
+      "compression resistance",
+      "chemical resistance"
+    ],
+    "content": "Monofilament yarns are durable, resistant to compression and have better chemical resistance than multifilament yarns."
+  },
+  {
+    "id": "pmc_ref_028",
+    "topic": "multifilament_characteristics",
+    "keywords": [
+      "multifilament",
+      "compressible",
+      "supple"
+    ],
+    "content": "Multifilament yarns are more supple and compressible than monofilament yarns but have lower resistance to chemical attack."
+  },
+  {
+    "id": "pmc_ref_029",
+    "topic": "seam_fabrics",
+    "keywords": [
+      "pin seam",
+      "woven loop seam",
+      "seamed felt"
+    ],
+    "content": "Seam fabrics improve installation safety and reduce installation time. Main seam types include pin seam and woven loop seam designs."
+  },
+  {
+    "id": "pmc_ref_030",
+    "topic": "batt_denier_selection",
+    "keywords": [
+      "batt denier",
+      "fiber fineness",
+      "water handling"
+    ],
+    "content": "Batt denier selection depends on water handling requirements, break-in time, vacuum capacity, sheet control, filling tendency and bleed-through tendency."
+  }
+]
