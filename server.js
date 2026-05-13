@@ -138,19 +138,42 @@ app.post("/ask", upload.single("file"), async (req, res) => {
     // ===============================
 
     else if (mode === "PMC") {
-      const userContent = uploadedText
-        ? `MATERIAL:\n${uploadedText}\n\nQUESTION:\n${question}`
-        : question;
 
-      const r = await openai.responses.create({
-        model: "gpt-5.2",
-        input: buildInput(PMC_SYSTEM_INSTRUCTION, userContent),
-        max_output_tokens: 800
-      });
+  const relevantKB = findRelevantKB(question);
 
-      answer = r.output_text || "";
-    }
+  let kbContext = "";
 
+  if (relevantKB.length > 0) {
+
+    kbContext =
+      "PMC KNOWLEDGE BASE:\n\n" +
+      relevantKB.map(item =>
+        `TOPIC: ${item.topic}\n${item.content}`
+      ).join("\n\n---\n\n");
+
+    kbContext = kbContext.slice(0, 4000);
+  }
+
+  const userContent = `
+${kbContext ? kbContext + "\n\n" : ""}
+
+${uploadedText ? `DOCUMENT:\n${uploadedText}\n\n` : ""}
+
+QUESTION:
+${question}
+`;
+
+  const r = await openai.responses.create({
+    model: "gpt-5.2",
+    input: buildInput(
+      PMC_SYSTEM_INSTRUCTION,
+      userContent
+    ),
+    max_output_tokens: 1000
+  });
+
+  answer = r.output_text || "";
+}
     // ===============================
     // GENERAL MODE
     // ===============================
