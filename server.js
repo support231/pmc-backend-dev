@@ -2,6 +2,8 @@ import express from "express";
 import cors from "cors";
 import OpenAI from "openai";
 import { upload, extractUploadedText } from "./upload.js";
+import { loadKB } from "./utils/kbLoader.js";
+import { findRelevantKB } from "./utils/kbMatcher.js";
 
 const app = express();
 app.use(cors());
@@ -216,7 +218,7 @@ ${question}
 // ===============================
 // START SERVER
 // ===============================
-
+loadKB();
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("PMC CENTRE AI backend running on port", PORT);
