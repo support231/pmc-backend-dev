@@ -1,0 +1,261 @@
+[
+  {
+    "id": "df1_001",
+    "topic": "dryer_fabric_function",
+    "keywords": [
+      "dryer fabric",
+      "drying section",
+      "sheet support",
+      "heat transfer",
+      "runnability"
+    ],
+    "content": "Dryer fabrics support and carry the paper sheet through the dryer section while allowing moisture evaporation and maintaining sheet stability. Important functions include heat transfer, sheet support, permeability control and runnability improvement."
+  },
+  {
+    "id": "df1_002",
+    "topic": "dryer_section_sheet_properties",
+    "keywords": [
+      "drying effect",
+      "sheet shrinkage",
+      "draw",
+      "paper strength",
+      "dryer section"
+    ],
+    "content": "Drying affects paper strength, shrinkage, smoothness and dimensional stability. Excessive draw reduces extensibility and increases MD tensile strength. Restrained drying increases tensile strength but reduces stretchability."
+  },
+  {
+    "id": "df1_003",
+    "topic": "sheet_shrinkage",
+    "keywords": [
+      "sheet shrinkage",
+      "dry solids",
+      "cross direction shrinkage",
+      "cockle",
+      "edge curl"
+    ],
+    "content": "Paper shrinkage during drying mainly occurs between 55% and 85% dry solids. Excessive shrinkage can reduce sheet smoothness and cause cockle and edge curl."
+  },
+  {
+    "id": "df1_004",
+    "topic": "overdrying_effects",
+    "keywords": [
+      "overdrying",
+      "brittleness",
+      "sheet breaks",
+      "blistering",
+      "wrinkles"
+    ],
+    "content": "Overdrying causes brittleness and strength reduction. Excessively hot cylinders or unsuitable dryer fabrics may cause blistering. Sheet flutter and edge lifting can create wrinkles."
+  },
+  {
+    "id": "df1_005",
+    "topic": "dryer_fabric_requirements",
+    "keywords": [
+      "dryer fabric requirements",
+      "hydrolysis resistance",
+      "thermal stability",
+      "cleanability",
+      "abrasion resistance"
+    ],
+    "content": "Dryer fabrics require resistance against hydrolysis, dry heat, abrasion, acids and alkalis. Additional requirements include dimensional stability, tensile strength, cleanability, contamination resistance and nonmarking surface properties."
+  },
+  {
+    "id": "df1_006",
+    "topic": "dryer_yarn_categories",
+    "keywords": [
+      "dryer yarn",
+      "staple yarn",
+      "multifilament",
+      "monofilament",
+      "special yarn"
+    ],
+    "content": "Major yarn categories used in dryer fabrics include staple yarns, multifilaments, monofilaments and specialty yarns. Material selection depends on hydrolysis resistance, heat resistance, strength and contamination behavior."
+  },
+  {
+    "id": "df1_007",
+    "topic": "polyester_yarn_properties",
+    "keywords": [
+      "polyester yarn",
+      "PET",
+      "hydrolysis resistance",
+      "dryer monofilament"
+    ],
+    "content": "Hydrolysis resistant polyester monofilaments are widely used in dryer fabrics because of good tensile strength, dimensional stability and acceptable heat resistance."
+  },
+  {
+    "id": "df1_008",
+    "topic": "aramid_yarn_properties",
+    "keywords": [
+      "aramid",
+      "Nomex",
+      "heat resistance",
+      "chemical resistance"
+    ],
+    "content": "Aramid yarns provide excellent resistance against hydrolysis, dry heat and chemicals and are used in high performance dryer fabric applications."
+  },
+  {
+    "id": "df1_009",
+    "topic": "acrylic_yarn_properties",
+    "keywords": [
+      "acrylic yarn",
+      "hydrolysis resistance",
+      "chemical resistance"
+    ],
+    "content": "Acrylic yarns have excellent hydrolysis and chemical resistance and are often blended with other fibers to improve dryer fabric performance."
+  },
+  {
+    "id": "df1_010",
+    "topic": "specialty_surface_yarns",
+    "keywords": [
+      "flock yarn",
+      "anticontamination",
+      "surface yarn",
+      "white pitch"
+    ],
+    "content": "Specialty yarns such as flock yarns are designed to reduce contamination and improve resistance against deposits such as white pitch."
+  },
+  {
+    "id": "df1_011",
+    "topic": "dryer_fabric_types",
+    "keywords": [
+      "woven dryer fabric",
+      "spiral fabric",
+      "needled fabric",
+      "batt on base"
+    ],
+    "content": "Dryer fabrics are mainly classified into woven fabrics, spiral fabrics and needled batt-on-base fabrics depending on manufacturing method and application."
+  },
+  {
+    "id": "df1_012",
+    "topic": "woven_dryer_fabrics",
+    "keywords": [
+      "woven fabric",
+      "dryer weave",
+      "multilayer fabric"
+    ],
+    "content": "Woven dryer fabrics are the most widely used dryer fabrics because they provide good strength, stability and controlled permeability."
+  },
+  {
+    "id": "df1_013",
+    "topic": "spiral_fabrics",
+    "keywords": [
+      "spiral fabric",
+      "spiral link",
+      "ventilation",
+      "dimensional stability"
+    ],
+    "content": "Spiral fabrics are made from monofilament spirals connected by pintles. They offer good dimensional stability and ventilation but generally have higher thickness and lower contact area."
+  },
+  {
+    "id": "df1_014",
+    "topic": "spiral_fabric_permeability",
+    "keywords": [
+      "spiral permeability",
+      "air permeability",
+      "filled spiral"
+    ],
+    "content": "Spiral fabrics typically have high air permeability ranging from approximately 800 to 1000 cfm. Filling materials may be inserted into spirals to reduce permeability."
+  },
+  {
+    "id": "df1_015",
+    "topic": "needled_dryer_fabrics",
+    "keywords": [
+      "needled dryer fabric",
+      "batt on base",
+      "marking sensitive grades"
+    ],
+    "content": "Needled batt-on-base dryer fabrics contain a needled nylon batt layer attached to a woven or spiral base fabric. They are mainly used for marking sensitive grades."
+  },
+  {
+    "id": "df1_016",
+    "topic": "needled_fabric_permeability",
+    "keywords": [
+      "needled permeability",
+      "dryer batt",
+      "air flow"
+    ],
+    "content": "Needled dryer fabrics generally operate with air permeability between approximately 50 and 200 cfm."
+  },
+  {
+    "id": "df1_017",
+    "topic": "mesh_and_permeability",
+    "keywords": [
+      "mesh",
+      "air permeability",
+      "contact area",
+      "stability"
+    ],
+    "content": "Warp and weft yarn counts directly influence contact area, tensile strength, air permeability, air carrying capacity and fabric stability."
+  },
+  {
+    "id": "df1_018",
+    "topic": "warp_float_weaves",
+    "keywords": [
+      "warp float",
+      "weave pattern",
+      "contact area"
+    ],
+    "content": "Warp float weave patterns contain warp yarns floating over multiple filling yarns and are widely used for controlled contact area and stable sheet support."
+  },
+  {
+    "id": "df1_019",
+    "topic": "soft_face_fabrics",
+    "keywords": [
+      "soft face",
+      "marking sensitive",
+      "dryer surface"
+    ],
+    "content": "Soft face fabrics use floating weft yarns and bulky surface yarns to reduce sheet marking in sensitive paper grades."
+  },
+  {
+    "id": "df1_020",
+    "topic": "md_cd_layers",
+    "keywords": [
+      "MD layers",
+      "CD layers",
+      "multilayer dryer fabric"
+    ],
+    "content": "Dryer fabrics may contain multiple machine direction and cross machine direction layers to improve stability, seam design and surface properties."
+  },
+  {
+    "id": "df1_021",
+    "topic": "dryer_fabric_seams",
+    "keywords": [
+      "dryer seam",
+      "pintle",
+      "loop seam",
+      "coil seam"
+    ],
+    "content": "Dryer fabric seams are formed using loops or coils joined by a pintle wire. Seam quality strongly affects strength, permeability and marking behavior."
+  },
+  {
+    "id": "df1_022",
+    "topic": "seam_requirements",
+    "keywords": [
+      "seam strength",
+      "nonmarking seam",
+      "wear resistance"
+    ],
+    "content": "Dryer fabric seams must provide high tensile strength, wear resistance and permeability similar to the fabric body to avoid sheet marking and drying variations."
+  },
+  {
+    "id": "df1_023",
+    "topic": "heatsetting",
+    "keywords": [
+      "heatsetting",
+      "dimensional stability",
+      "thermal stabilization"
+    ],
+    "content": "Heatsetting stabilizes dryer fabrics by permanently fixing yarn crimp and minimizing uncontrolled dimensional changes during machine operation."
+  },
+  {
+    "id": "df1_024",
+    "topic": "dryer_fabric_manufacturing",
+    "keywords": [
+      "warping",
+      "weaving",
+      "dryer fabric manufacturing"
+    ],
+    "content": "Dryer fabrics are manufactured through warping, weaving, burling, heatsetting and finishing processes using heavy duty weaving equipment."
+  }
+]
