@@ -1,0 +1,177 @@
+[
+  {
+    "id": "forming_001",
+    "keywords": [
+      "warp",
+      "polyester",
+      "high shrinkage",
+      "dimensional stability",
+      "seam strength"
+    ],
+    "topic": "Warp Yarn Selection in Forming Fabrics",
+    "content": "High tenacity and high shrinkage polyester monofilaments are commonly used as warp yarns in forming fabrics to improve fabric modulus, seam strength and dimensional stability during machine running."
+  },
+
+  {
+    "id": "forming_002",
+    "keywords": [
+      "ssb",
+      "paper side",
+      "smoothness",
+      "920Y",
+      "top warp"
+    ],
+    "topic": "Soft Warp Usage on SSB Paper Side",
+    "content": "Softer polyester warp yarns are used on the paper side of SSB fabrics to improve sheet-side smoothness and paper formation quality."
+  },
+
+  {
+    "id": "forming_003",
+    "keywords": [
+      "polyamide",
+      "weft",
+      "abrasion resistance",
+      "wear life"
+    ],
+    "topic": "Polyamide Weft Function",
+    "content": "Polyamide weft yarns are commonly used in forming fabrics because of their superior abrasion resistance, which helps improve running life and wear performance."
+  },
+
+  {
+    "id": "forming_004",
+    "keywords": [
+      "1.5 layer",
+      "edge curl",
+      "high shrinkage",
+      "machine side"
+    ],
+    "topic": "Machine Side High Shrinkage Weft in 1.5 Layer Fabrics",
+    "content": "High shrinkage polyester and polyamide wefts are used on the machine side of 1.5-layer forming fabrics to improve edge curl control and structural stability."
+  },
+
+  {
+    "id": "forming_005",
+    "keywords": [
+      "2.5 layer",
+      "filler weft",
+      "fiber support",
+      "retention"
+    ],
+    "topic": "Filler Weft Function in 2.5 Layer Fabrics",
+    "content": "The filler weft used in 2.5-layer forming fabrics improves fiber support and retention by increasing the support structure on the paper side surface."
+  },
+
+  {
+    "id": "forming_006",
+    "keywords": [
+      "binder weft",
+      "ssb",
+      "delamination",
+      "layer separation"
+    ],
+    "topic": "Binder Weft Function in SSB Fabrics",
+    "content": "Binder wefts in SSB fabrics help lock the paper side and machine side layers together and reduce the risk of layer separation or delamination during machine operation."
+  },
+
+  {
+    "id": "forming_007",
+    "keywords": [
+      "mesh",
+      "forming fabric terminology",
+      "machine direction",
+      "cross machine direction"
+    ],
+    "topic": "Meaning of Mesh in Forming Fabrics",
+    "content": "Mesh describes the number of machine direction and cross machine direction yarns within a defined unit area of forming fabric and is an important parameter for fabric structure characterization."
+  },
+
+  {
+    "id": "forming_008",
+    "keywords": [
+      "yarn diameter",
+      "drainage",
+      "wear volume"
+    ],
+    "topic": "Effect of Yarn Diameter",
+    "content": "Yarn diameter directly influences drainage rate, wear volume and surface characteristics of forming fabrics."
+  },
+
+  {
+    "id": "forming_009",
+    "keywords": [
+      "open area",
+      "drainage potential",
+      "multilayer"
+    ],
+    "topic": "Importance of Top Surface Open Area",
+    "content": "Top surface open area is a better indicator of drainage potential in multilayer forming fabrics compared to CFM because it reflects actual drainage openings on the paper side surface."
+  },
+
+  {
+    "id": "forming_010",
+    "keywords": [
+      "cfm",
+      "air permeability",
+      "single layer",
+      "drainage"
+    ],
+    "topic": "Limitations of CFM in Multilayer Fabrics",
+    "content": "CFM is useful for evaluating single-layer fabrics but becomes less reliable for multilayer fabrics because center and bottom layers strongly influence air permeability values without directly representing drainage behavior."
+  },
+
+  {
+    "id": "forming_011",
+    "keywords": [
+      "fiber support index",
+      "formation",
+      "sheet support"
+    ],
+    "topic": "Fiber Support Index Function",
+    "content": "Fiber Support Index evaluates the support characteristics of forming fabrics and helps compare formation support performance between single-layer, double-layer and triple-layer constructions."
+  },
+
+  {
+    "id": "forming_012",
+    "keywords": [
+      "g weave",
+      "uniform drainage",
+      "hole uniformity"
+    ],
+    "topic": "Advantages of G-Weave Designs",
+    "content": "G-weave forming fabrics provide more uniform drainage hole distribution, resulting in improved drainage uniformity and reduced twill marking compared to some E-weave and H-weave structures."
+  },
+
+  {
+    "id": "forming_013",
+    "keywords": [
+      "triple layer",
+      "sheet support",
+      "uniform surface"
+    ],
+    "topic": "Advantages of Triple Layer Fabrics",
+    "content": "Triple-layer forming fabrics provide highly uniform paper-side support with consistent hole size distribution, improving sheet formation and reducing wire marking."
+  },
+
+  {
+    "id": "forming_014",
+    "keywords": [
+      "stacking",
+      "forming fabric",
+      "drainage uniformity",
+      "sheet support"
+    ],
+    "topic": "Importance of Stacking in Forming Fabrics",
+    "content": "Proper stacking alignment in multilayer forming fabrics improves drainage uniformity, paper-side smoothness and sheet support performance."
+  },
+
+  {
+    "id": "forming_015",
+    "keywords": [
+      "heat setting",
+      "stacking",
+      "yarn migration"
+    ],
+    "topic": "Effect of Heat Setting on Stacking",
+    "content": "Excessive or uneven heat setting can distort vertical yarn alignment and damage stacking quality by causing yarn migration between layers."
+  }
+]
