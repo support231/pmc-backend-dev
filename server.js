@@ -45,7 +45,6 @@ If the KB does not fully answer the question:
 - provide practical consultancy-style guidance
 
 - Finish properly with a closing question
-`;
 
 ${CORE_RULES}
 `;
