@@ -1,0 +1,207 @@
+[
+  {
+    "id": "ff2_001",
+    "topic": "air_permeability",
+    "keywords": [
+      "air permeability",
+      "drainage",
+      "cfm",
+      "forming fabric",
+      "water flow"
+    ],
+    "content": "Air permeability measures the airflow through a forming fabric at a standard pressure drop, typically expressed as cfm per square foot at 0.5 inch water column pressure. It is an important indicator of drainage characteristics and fabric uniformity, although actual water handling also depends on sheet support characteristics."
+  },
+  {
+    "id": "ff2_002",
+    "topic": "void_volume",
+    "keywords": [
+      "void volume",
+      "drainage",
+      "water handling",
+      "open space",
+      "dewatering"
+    ],
+    "content": "Void volume is the amount of internal space within a forming fabric not occupied by yarn material. Typical single and double layer fabrics have void volumes between 60% and 70%. High interconnected void volume can improve dewatering, but excessive void volume may cause higher water carryback and wetter sheets."
+  },
+  {
+    "id": "ff2_003",
+    "topic": "minimum_average_hole_area",
+    "keywords": [
+      "MAHA",
+      "minimum average hole area",
+      "bottleneck",
+      "drainage limitation",
+      "fabric structure"
+    ],
+    "content": "Water passage through a forming fabric is controlled by the least permeable internal plane called the Minimum Average Hole Area or bottleneck. The bottleneck changes with weave pattern, yarn material and fabric structure, and is more important than projected open area in determining drainage behavior."
+  },
+  {
+    "id": "ff2_004",
+    "topic": "fiber_support_index",
+    "keywords": [
+      "FSI",
+      "fiber support index",
+      "formation",
+      "sheet support",
+      "mesh"
+    ],
+    "content": "Fiber Support Index (FSI) is a calculated value used to predict the fiber support capability of a forming fabric based on mesh count, weave design and yarn configuration. Higher FSI values generally indicate improved sheet support and formation quality."
+  },
+  {
+    "id": "ff2_005",
+    "topic": "hole_size_and_shape",
+    "keywords": [
+      "hole size",
+      "hole shape",
+      "fiber bridging",
+      "retention",
+      "formation"
+    ],
+    "content": "Hole size and hole geometry strongly influence fiber bridging, fines retention and sheet formation. Square openings generally provide better fiber interaction and improved retention compared to elongated openings."
+  },
+  {
+    "id": "ff2_006",
+    "topic": "fiber_bridging",
+    "keywords": [
+      "fiber bridging",
+      "sheet formation",
+      "retention",
+      "fines",
+      "fillers"
+    ],
+    "content": "Fiber bridging occurs when long fibers span across open areas of the forming fabric and begin forming a fiber-filler plug. The depth and location of initial bridging are influenced by yarn diameter, mesh and weave pattern."
+  },
+  {
+    "id": "ff2_007",
+    "topic": "fabric_thickness",
+    "keywords": [
+      "fabric thickness",
+      "caliper",
+      "water carryback",
+      "drainage"
+    ],
+    "content": "Fabric thickness affects drainage performance and water carryback. Excessively thick fabrics may retain more water and increase carryback, while thinner structures may provide faster drainage."
+  },
+  {
+    "id": "ff2_008",
+    "topic": "seam_strength",
+    "keywords": [
+      "seam strength",
+      "seam efficiency",
+      "forming fabric seam",
+      "tensile strength"
+    ],
+    "content": "Seam strength is critical for reliable fabric operation under machine tension. Seam efficiency is defined as seam tensile strength divided by fabric tensile strength multiplied by 100. Ideally, seam strength should approach the strength of the fabric body."
+  },
+  {
+    "id": "ff2_009",
+    "topic": "fabric_uniformity",
+    "keywords": [
+      "fabric uniformity",
+      "air permeability",
+      "drainage consistency",
+      "quality"
+    ],
+    "content": "Uniform air permeability across the width of a forming fabric is an important indication of manufacturing consistency and uniform drainage behavior during papermaking."
+  },
+  {
+    "id": "ff2_010",
+    "topic": "open_area_characteristics",
+    "keywords": [
+      "open area",
+      "projected open area",
+      "drainage path",
+      "fabric geometry"
+    ],
+    "content": "Projected open area alone does not fully represent drainage capability because internal drainage paths within multilayer fabrics may remain open even when the surface projected open area appears minimal."
+  },
+  {
+    "id": "ff2_011",
+    "topic": "contamination_resistance",
+    "keywords": [
+      "fabric contamination",
+      "contaminant resistant yarn",
+      "coated fabrics",
+      "cleanability"
+    ],
+    "content": "Contaminant resistant yarns and fabric coatings are used to reduce chemical bonding between contaminants and yarn surfaces. Improved cleanability helps maintain drainage performance, reduce downtime and extend fabric life."
+  },
+  {
+    "id": "ff2_012",
+    "topic": "surface_wettability",
+    "keywords": [
+      "surface wettability",
+      "contact angle",
+      "water film",
+      "fabric cleaning"
+    ],
+    "content": "Surface wettability influences contaminant adhesion and cleaning efficiency. Fabrics with modified surface properties can carry a water film that reduces contaminant buildup and improves shower cleaning efficiency."
+  },
+  {
+    "id": "ff2_013",
+    "topic": "forming_fabric_for_spunlace",
+    "keywords": [
+      "spunlace",
+      "hydroentanglement",
+      "nonwoven",
+      "forming fabric application"
+    ],
+    "content": "In spunlace or hydroentanglement processes, forming fabrics support the fiber web while high pressure water jets entangle fibers. Important fabric characteristics include stability, release properties, seam quality and fabric uniformity."
+  },
+  {
+    "id": "ff2_014",
+    "topic": "forming_fabric_for_meltblown",
+    "keywords": [
+      "meltblown",
+      "nonwoven fabric",
+      "air permeability",
+      "forming fabric"
+    ],
+    "content": "Forming fabrics used in meltblown processes require good air permeability, coarse to medium mesh structures and stable support surfaces. Both metallic and synthetic fabrics may be used depending on the application."
+  },
+  {
+    "id": "ff2_015",
+    "topic": "specialty_fabrics",
+    "keywords": [
+      "specialty fabrics",
+      "industrial fabrics",
+      "drying",
+      "filtration",
+      "textile processing"
+    ],
+    "content": "Specialty fabrics similar to paper machine clothing are used in applications such as food processing, textile drying, filtration and dewatering. These fabrics typically have coarse structures, high air permeability and are woven under higher tensions."
+  },
+  {
+    "id": "ff2_016",
+    "topic": "specialty_fabric_air_permeability",
+    "keywords": [
+      "specialty fabric",
+      "air permeability",
+      "cfm",
+      "industrial applications"
+    ],
+    "content": "Specialty industrial fabrics commonly operate with air permeabilities ranging from approximately 300 to 1300 cfm depending on the drying or filtration application requirements."
+  },
+  {
+    "id": "ff2_017",
+    "topic": "coil_fabric_design",
+    "keywords": [
+      "coil fabric",
+      "polyester monofilament",
+      "construction board",
+      "water removal"
+    ],
+    "content": "Coil fabric designs made from polyester monofilaments are used in wet and dry formed construction board manufacturing where maximum water removal and dimensional stability are required."
+  },
+  {
+    "id": "ff2_018",
+    "topic": "industrial_fabric_seams",
+    "keywords": [
+      "clipper seam",
+      "coil seam",
+      "industrial seam",
+      "specialty fabric"
+    ],
+    "content": "Industrial specialty fabrics may use seam constructions such as single wire clipper seams or coil seams depending on machine configuration and application requirements."
+  }
+]
