@@ -1,0 +1,265 @@
+{
+  "book_title": "PMC Reference Book Part 2",
+  "sections": [
+    {
+      "chapter": 8,
+      "title": "Computers in Paper Machine Clothing",
+      "topics": [
+        {
+          "title": "Overview",
+          "content": [
+            "Computers are widely used in papermaking and paper machine clothing manufacturing.",
+            "Applications include product design, process development, manufacturing, testing, automation and information management.",
+            "Internet and WWW technologies transformed information exchange and technical communication."
+          ]
+        },
+        {
+          "title": "Definitions",
+          "content": [
+            "CAD: Computer Aided Design.",
+            "CIM: Computer Integrated Manufacturing.",
+            "CPU: Central Processing Unit.",
+            "PLC: Programmable Logic Controller.",
+            "HTML: Hyper Text Markup Language.",
+            "WWW: World Wide Web.",
+            "RAM: Random Access Memory.",
+            "ROM: Read Only Memory.",
+            "URL: Universal Resource Locator.",
+            "FTP: File Transfer Protocol.",
+            "Expert System: Intelligent software using scientific and empirical knowledge."
+          ]
+        },
+        {
+          "title": "Computer Aided Design (CAD)",
+          "content": [
+            "CAD systems are used for design and development of PMC products.",
+            "Fabric structures can be modeled before manufacturing trials.",
+            "Finite Element Analysis (FEA) is commonly used for modeling.",
+            "CAD helps reduce development time and cost.",
+            "Typical CAD systems include monitor, scanner, plotter, printer and digitizer."
+          ]
+        },
+        {
+          "title": "Computer Integrated Manufacturing (CIM)",
+          "content": [
+            "CIM integrates manufacturing processes using computers.",
+            "PLCs are used for machine control and monitoring.",
+            "Benefits include improved quality, energy savings, labor savings and process optimization.",
+            "CIM integrates process technology, control technology and knowledge technology.",
+            "MIS systems support planning, scheduling and production management."
+          ]
+        },
+        {
+          "title": "Process Simulation and Testing",
+          "content": [
+            "Simulation programs predict fabric behavior during operation.",
+            "Fluid flow simulations are used for drainage studies.",
+            "Computerized testing improves accuracy and repeatability.",
+            "Stress-strain analysis is commonly computerized."
+          ]
+        },
+        {
+          "title": "Image Technology",
+          "content": [
+            "Image analysis is used to study fabric structures and surfaces.",
+            "Microscopic imaging helps evaluate void volume and smoothness.",
+            "Documents and drawings can be digitized and electronically processed."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "Future of Papermaking and Paper Machine Clothing",
+      "topics": [
+        {
+          "title": "General Future Trends",
+          "content": [
+            "Paper machine speeds are expected to exceed 10,000 fpm.",
+            "Machine widths and automation levels will continue increasing.",
+            "Demand for better quality and uniformity will increase.",
+            "Recycled fiber usage will continue growing.",
+            "Environmental concerns will drive process changes."
+          ]
+        },
+        {
+          "title": "Future of Paper Machines",
+          "content": [
+            "Gap forming and twin-wire technologies will dominate.",
+            "Hydraulic headboxes and dilution control systems will increase.",
+            "High consistency forming will gain importance.",
+            "Automation and fuzzy logic controls will expand.",
+            "Closed draw and fully supported sheet transfer systems will increase."
+          ]
+        },
+        {
+          "title": "Future of Forming Fabrics",
+          "content": [
+            "Higher stability and fiber support will be required.",
+            "Three-layer structures will become more common.",
+            "Contaminant resistant fabrics will gain importance due to recycled fibers.",
+            "Lower caliper fabrics with improved sheet support will be developed.",
+            "Pin seam and easy installation fabrics will become more important."
+          ]
+        },
+        {
+          "title": "Future of Press Fabrics",
+          "content": [
+            "Improved dewatering efficiency will remain critical.",
+            "Shoe press applications will continue expanding.",
+            "Multilayer and laminated press fabrics will increase.",
+            "High void volume structures will support alkaline papermaking.",
+            "Impulse drying research may combine pressing and drying operations."
+          ]
+        },
+        {
+          "title": "Future of Dryer Fabrics",
+          "content": [
+            "Dryer fabrics with better contamination resistance will be required.",
+            "Higher temperature and hydrolysis resistant materials will be developed.",
+            "Low caliper monofilament structures will improve drying efficiency.",
+            "Single tier dryer systems and closed transfers will continue increasing.",
+            "Improved seam design and dimensional stability will be important."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "Appendix A",
+      "title": "Size-Denier Relationships",
+      "topics": [
+        {
+          "title": "Polyester Monofilament Size Equivalency",
+          "content": [
+            "Provides relationship between filament diameter, denier, decitex, yards/lb and meters/kg.",
+            "Useful for fabric design and yarn selection."
+          ]
+        },
+        {
+          "title": "Nylon Monofilament Size Equivalency",
+          "content": [
+            "Provides nylon filament conversion tables for PMC applications.",
+            "Supports fabric engineering and material selection."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "Appendix B",
+      "title": "Forming Section Troubleshooting Guide",
+      "topics": [
+        {
+          "title": "Common Forming Problems",
+          "content": [
+            "Barring",
+            "Cockling",
+            "Couch shadow marking",
+            "Cracks",
+            "Curl",
+            "Dandy roll marks",
+            "Edge breaks",
+            "Guiding issues",
+            "Poor drainage",
+            "Poor formation",
+            "Wire marks",
+            "Sheet wrinkles",
+            "Speed variation"
+          ]
+        },
+        {
+          "title": "Troubleshooting Focus Areas",
+          "content": [
+            "Fabric tension",
+            "Vacuum settings",
+            "Drainage balance",
+            "Machine alignment",
+            "Fabric wear",
+            "Shower condition",
+            "Stock system pulsation",
+            "Roll condition"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "Appendix C",
+      "title": "Press Section Troubleshooting Guide",
+      "topics": [
+        {
+          "title": "Common Press Problems",
+          "content": [
+            "Poor pickup",
+            "Crushing",
+            "Blistering",
+            "Sheet following",
+            "Felt bagginess",
+            "Moisture profile problems",
+            "Sheet stealing"
+          ]
+        },
+        {
+          "title": "Troubleshooting Parameters",
+          "content": [
+            "Felt moisture",
+            "Vacuum level",
+            "Press loading",
+            "Felt tension",
+            "Roll condition",
+            "Shower application",
+            "Seal strip condition"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "Appendix D",
+      "title": "Tension Force Calculations of Dryer Fabrics",
+      "topics": [
+        {
+          "title": "Dryer Fabric Tension Principles",
+          "content": [
+            "Recommended dryer fabric tension is generally 1.5 to 1.8 kg/cm.",
+            "Low tension reduces drying efficiency.",
+            "High tension may damage fabrics and rolls."
+          ]
+        },
+        {
+          "title": "Vector Force Calculations",
+          "content": [
+            "Tension calculations depend on roll geometry and angle.",
+            "Stretch roll movement direction affects actual fabric tension.",
+            "Over-tension increases significantly at larger wrap angles."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "Appendix E",
+      "title": "Testing Laboratories and Research Facilities",
+      "topics": [
+        {
+          "title": "Research Organizations",
+          "content": [
+            "Auburn University PPREC",
+            "Institute of Paper Science and Technology",
+            "Pulp and Paper Research Institute of Canada",
+            "SUNY ESPRI",
+            "University of Maine",
+            "North Carolina State University"
+          ]
+        },
+        {
+          "title": "Testing Services",
+          "content": [
+            "Fiber testing",
+            "Paper testing",
+            "Pulping and bleaching studies",
+            "Analytical chemistry",
+            "Environmental studies",
+            "Process development"
+          ]
+        }
+      ]
+    }
+  ]
+}
