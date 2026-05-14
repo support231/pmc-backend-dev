@@ -68,6 +68,17 @@ ${CORE_RULES}
 // HELPER
 // ===============================
 
+function normalizeQuery(input) {
+
+  if (!input) return "";
+
+  return input
+    .trim()
+    .replace(/\s+/g, " ")
+    .slice(0, 2000);
+
+}
+
 function logTokenUsage(mode, response) {
 
   const tokenUsage = extractTokenUsage(response);
