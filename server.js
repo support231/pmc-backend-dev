@@ -149,7 +149,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
         input: buildInput(LIVE_SYSTEM_INSTRUCTION, question),
         max_output_tokens: 400
       });
-      logTokenUsage("LIVE", r);
+      const tokenUsage = logTokenUsage("LIVE", r);
       answer = r.output_text || "";
     }
 
@@ -208,7 +208,7 @@ const tokenUsage = logTokenUsage("PMC", r);
         input: buildInput(GENERAL_SYSTEM_INSTRUCTION, userContent),
         max_output_tokens: 600
       });
-    logTokenUsage("GENERAL", r);
+     const tokenUsage = logTokenUsage("GENERAL", r);
       answer = r.output_text || "";
     }
 
