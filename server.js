@@ -154,7 +154,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
         input: buildInput(LIVE_SYSTEM_INSTRUCTION, question),
         max_output_tokens: 400
       });
-      const tokenUsage = logTokenUsage("LIVE", r);
+      tokenUsage = logTokenUsage("LIVE", r);
       answer = r.output_text || "";
     }
 
@@ -196,7 +196,7 @@ ${question}
     ),
     max_output_tokens: 1000
   });
-const tokenUsage = logTokenUsage("PMC", r);
+  tokenUsage = logTokenUsage("PMC", r);
   answer = r.output_text || "";
 }
     // ===============================
@@ -213,7 +213,7 @@ const tokenUsage = logTokenUsage("PMC", r);
         input: buildInput(GENERAL_SYSTEM_INSTRUCTION, userContent),
         max_output_tokens: 600
       });
-     const tokenUsage = logTokenUsage("GENERAL", r);
+      tokenUsage = logTokenUsage("GENERAL", r);
       answer = r.output_text || "";
     }
 
