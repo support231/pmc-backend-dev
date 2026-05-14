@@ -191,7 +191,7 @@ ${question}
     ),
     max_output_tokens: 1000
   });
-logTokenUsage("PMC", r);
+const tokenUsage = logTokenUsage("PMC", r);
   answer = r.output_text || "";
 }
     // ===============================
