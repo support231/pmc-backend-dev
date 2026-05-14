@@ -4,7 +4,7 @@ import OpenAI from "openai";
 import { upload, extractUploadedText } from "./upload.js";
 import { loadKB } from "./utils/kbLoader.js";
 import { findRelevantKB } from "./utils/kbMatcher.js";
-
+import { extractTokenUsage } from "./utils/tokenTracker.js";
 const app = express();
 app.use(cors());
 
