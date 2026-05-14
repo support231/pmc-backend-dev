@@ -185,6 +185,8 @@ ${question}
     ),
     max_output_tokens: 1000
   });
+    const tokenUsage = extractTokenUsage(response);
+    console.log("TOKEN USAGE:", tokenUsage);
 
   answer = r.output_text || "";
 }
