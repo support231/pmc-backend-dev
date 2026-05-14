@@ -74,6 +74,16 @@ function normalizeQuery(input) {
   if (!input) return "";
   return input.trim().replace(/\s+/g, " ").slice(0, 2000);
 }
+function logTokenUsage(mode, response) {
+  const tokenUsage = extractTokenUsage(response);
+
+  console.log("TOKEN USAGE:", {
+    mode,
+    input: tokenUsage.inputTokens,
+    output: tokenUsage.outputTokens,
+    total: tokenUsage.totalTokens
+  });
+}
 
 // ===============================
 // ASK ENDPOINT
@@ -143,7 +153,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
         input: buildInput(LIVE_SYSTEM_INSTRUCTION, question),
         max_output_tokens: 400
       });
-
+      logTokenUsage("LIVE", r);
       answer = r.output_text || "";
     }
 
@@ -185,9 +195,7 @@ ${question}
     ),
     max_output_tokens: 1000
   });
-    const tokenUsage = extractTokenUsage(response);
-    console.log("TOKEN USAGE:", tokenUsage);
-
+logTokenUsage("PMC", r);
   answer = r.output_text || "";
 }
     // ===============================
@@ -204,7 +212,7 @@ ${question}
         input: buildInput(GENERAL_SYSTEM_INSTRUCTION, userContent),
         max_output_tokens: 600
       });
-
+    logTokenUsage("GENERAL", r);
       answer = r.output_text || "";
     }
 
