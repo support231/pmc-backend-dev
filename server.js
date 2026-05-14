@@ -224,7 +224,18 @@ logTokenUsage("PMC", r);
       answer = "Please try rephrasing your question.";
     }
 
-    res.json({ answer });
+    res.json({
+  answer,
+
+  tokenUsage: {
+    inputTokens: tokenUsage.inputTokens,
+    outputTokens: tokenUsage.outputTokens,
+    totalTokens: tokenUsage.totalTokens
+  },
+
+  model: "gpt-5.2",
+  aiMode: mode
+});
 
   } catch (err) {
     console.error("ASK ERROR:", err);
