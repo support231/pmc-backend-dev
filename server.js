@@ -116,7 +116,12 @@ app.post("/ask", upload.single("file"), async (req, res) => {
     }
 
     let answer = "";
-
+    let tokenUsage = {
+    inputTokens: 0,
+    outputTokens: 0,
+    totalTokens: 0
+    };
+    
     // ===============================
     // CONTEXT (MICRO - LAST ANSWER ONLY)
     // ===============================
