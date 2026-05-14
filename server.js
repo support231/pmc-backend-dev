@@ -154,7 +154,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
     else if (mode === "PMC") {
 
   const relevantKB = findRelevantKB(question);
-  console.log("Relevant KB:", relevantKB);
+  // console.log("Relevant KB:", relevantKB);
   let kbContext = "";
 
   if (relevantKB.length > 0) {
