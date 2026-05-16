@@ -255,7 +255,7 @@ ${question}
     console.error("ASK ERROR:", err);
 
     res.json({
-      answer: "Something went wrong. Please try again."
+      answer: "I could not process the request properly due to a temporary issue. Please try again in a moment or refresh the page if needed."
     });
   }
 });
