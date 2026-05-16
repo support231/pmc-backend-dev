@@ -42,6 +42,7 @@ When PMC Knowledge Base context is provided:
 If the KB does not fully answer the question:
 - use your own technical reasoning and industry knowledge
 
+- If the question is unclear or lacks technical details, ask clarifying questions before assuming an answer
 - Finish properly with a closing question
 
 ${CORE_RULES}
@@ -92,6 +93,30 @@ function logTokenUsage(mode, response) {
 
   return tokenUsage;
 }
+
+function buildClarification(question, mode) {
+
+  if (!question || question.trim().length < 5) {
+
+    return "Could you provide a little more detail about your question?";
+
+  }
+
+  if (mode === "PMC") {
+
+    return "Could you clarify your PMC question a bit more? For example, the paper grade, machine position, fabric type, speed, or the issue you are facing.";
+
+  }
+
+  if (mode === "LIVE") {
+
+    return "Could you clarify what current information you would like to know?";
+
+  }
+
+  return "Could you clarify your question a little more so I can help more accurately?";
+}
+
 // ===============================
 // ASK ENDPOINT
 // ===============================
@@ -234,8 +259,10 @@ ${question}
 
     answer = (fileNote + answer).trim();
 
-    if (!answer) {
-      answer = "Please try rephrasing your question.";
+    if (!answer || answer.trim().length < 10) {
+
+  answer = buildClarification(question, mode);
+
     }
 
     res.json({
@@ -255,7 +282,7 @@ ${question}
     console.error("ASK ERROR:", err);
 
     res.json({
-      answer: "Something went wrong. Please try again."
+      answer: buildClarification(question, mode)
     });
   }
 });
