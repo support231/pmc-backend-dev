@@ -166,7 +166,7 @@ app.post("/ask", upload.single("file"), async (req, res) => {
         max_output_tokens: 400
       });
       tokenUsage = logTokenUsage("LIVE", r);
-      answer = r.output_text || "";
+      answer = r.output_text || "I could not clearly understand the question. Please rephrase it with a little more detail or context.";
     }
 
     // ===============================
@@ -208,7 +208,7 @@ ${question}
     max_output_tokens: 1000
   });
   tokenUsage = logTokenUsage("PMC", r);
-  answer = r.output_text || "";
+  answer = r.output_text || "I could not generate a clear answer. Please clarify the question with a little more detail or technical context.";
 }
     // ===============================
     // GENERAL MODE
@@ -225,7 +225,7 @@ ${question}
         max_output_tokens: 600
       });
       tokenUsage = logTokenUsage("GENERAL", r);
-      answer = r.output_text || "";
+      answer = r.output_text || "I could not clearly understand the question. Please rephrase it with a little more detail or context.";
     }
 
     // ===============================
